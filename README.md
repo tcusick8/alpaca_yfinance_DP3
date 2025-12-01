@@ -41,6 +41,13 @@ python producer.py   # connects to Alpaca (paper/live), sends bars to Kafka
 python consumer.py   # consumes from Kafka and writes to DuckDB
 python clean_and_visualize.py # pulls from DuckDB to build comprehensive and interactive visualization locally
 ```
+Running the streaming demo (requires Alpaca credentials and a Kafka broker):
+```bash
+# if you are getting authentication issues when trying to run the Alpaca API stream, make sure your keys are visible to your system but only local and not pushed/committed anywhere
+# if needed run the following lines in your command line (replace contents of "" with actual keys)
+export ALPACA_API_KEY="your_api_key_here"
+export ALPACA_API_SECRET="your_api_secret_here"
+```
 
 Where data lives
 - Canonical analytical store: `historical_market_data.duckdb` (project root). Tables used by scripts include `bars`, `bars_cleaned`, and `fetch_metadata`.
