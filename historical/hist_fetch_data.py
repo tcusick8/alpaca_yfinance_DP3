@@ -1,19 +1,6 @@
 """
-fetch_hist_data.py
 ==================
 Historical Market Data Fetcher using yfinance
-
-Purpose: Fetch 20 years of historical market data (2005-2025) for recession analysis
-Author: Market Data Engineering Team
-Date: 2025
-
-Features:
-- Robust error handling and retry logic
-- Progress tracking with tqdm
-- Data validation and cleaning
-- Saves data in multiple formats (CSV, Parquet)
-- Logs all operations
-- Can handle large datasets efficiently
 """
 
 import os
