@@ -39,6 +39,7 @@ cd stream
 # start Kafka locally or point to a broker; then:
 python producer.py   # connects to Alpaca (paper/live), sends bars to Kafka
 python consumer.py   # consumes from Kafka and writes to DuckDB
+python clean_and_visualize.py # pulls from DuckDB to build comprehensive and interactive visualization locally
 ```
 
 Where data lives
