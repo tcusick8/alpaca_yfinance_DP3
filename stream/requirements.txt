@@ -1,14 +1,1 @@
-alpaca-py
-kafka-python
-duckdb
-requests
-python-dotenv
-pandas 
-matplotlib 
-mplfinance
-yfinance 
-tqdm 
-pandas 
-pyarrow 
-matplotlib 
-seaborn
+
