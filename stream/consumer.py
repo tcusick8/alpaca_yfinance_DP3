@@ -48,6 +48,7 @@ class DuckDBConsumer:
     def _init_table(self):
         """Create bars table if not exists."""
         self.conn.execute("""
+            DELETE TABLE IF EXISTS bars;
             CREATE TABLE IF NOT EXISTS bars (
                 symbol TEXT,
                 timestamp TIMESTAMP,
